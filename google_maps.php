@@ -3,10 +3,9 @@
 class cfs_google_maps extends cfs_field
 {
 
-    function __construct( $parent ) {
+    function __construct() {
         $this->name = 'google_maps';
         $this->label = __( 'Google Maps', 'cfs' );
-        $this->parent = $parent;
     }
 
 
