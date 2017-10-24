@@ -51,7 +51,7 @@ class cfs_google_maps extends cfs_field
 
     function input_head( $field = null ) {
     ?>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo defined( 'GMAPS_API_KEY' ) ? GMAPS_API_KEY : ''; ?>"></script>
     <?php
     }
 }
